@@ -18,7 +18,30 @@ blueButton.onclick =makeBlue;
     // anonymous function
     // anonymous faunction means name not declare 
 
-    let buttonBlack = document.getElementById('make-black-button');
+    const buttonBlack = document.getElementById('make-black-button');
     buttonBlack.onclick = function (){
         document.body.style.backgroundColor='black';
     }
+
+    // handle with addEventListener 
+    // way -1
+
+    const buttonGoldenRod =document.getElementById('make-golder-rod');
+    buttonGoldenRod.addEventListener('click',makeGolden);
+
+    function makeGolden (){
+        document.body.style.backgroundColor='goldenrod';
+    }
+
+// way -2 
+
+const makePink =document.getElementById('make-hot-pink');
+makePink.addEventListener('click', function pinkMake(){
+    document.body.style.backgroundColor='hotpink';
+})
+
+// way-3 shortcut
+
+document.getElementById('make-light-blue').addEventListener('click',function(){
+    document.body.style.backgroundColor='lightblue';
+})
