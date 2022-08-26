@@ -14,3 +14,11 @@ blueButton.onclick =makeBlue;
     function makeBlue(){
         document.body.style.backgroundColor='blue';
     }
+
+    // anonymous function
+    // anonymous faunction means name not declare 
+
+    let buttonBlack = document.getElementById('make-black-button');
+    buttonBlack.onclick = function (){
+        document.body.style.backgroundColor='black';
+    }
